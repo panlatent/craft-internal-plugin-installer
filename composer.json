@@ -1,0 +1,36 @@
+{
+  "name": "panlatent/craft-internal-plugin-installer",
+  "description": "Developing plugins within your Craft3 application",
+  "keywords": [
+    "cms",
+    "composer",
+    "craftcms",
+    "installer",
+    "plugin",
+    "internal"
+  ],
+  "homepage": "https://github.com/panlatent/craft-internal-plugin-installer",
+  "type": "composer-plugin",
+  "support": {
+    "email": "support@craftcms.com",
+    "issues": "https://github.com/panlatent/craft-internal-plugin-installer/issues?state=open"
+  },
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "composer-plugin-api": "~1.0",
+    "craftcms/plugin-installer": "^1.5"
+  },
+  "require-dev": {
+    "composer/composer": "~1.0",
+    "phpunit/phpunit": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "panlatent\\craft\\composer\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "panlatent\\craft\\composer\\Plugin"
+  }
+}
